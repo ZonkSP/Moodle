@@ -14,7 +14,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/charts.js'])
 </head>
 <body class="bg-gray-100 font-sans antialiased dark:bg-gray-900 dark:text-white">
     <div id="app" class="min-h-screen flex flex-col">

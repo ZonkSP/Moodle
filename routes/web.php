@@ -25,7 +25,11 @@ use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\TareaController;
 use App\Http\Controllers\EntregaController;
 use App\Http\Controllers\AlumnoTareasController;
+use App\Http\Controllers\StatsController;
 
+
+//stats
+Route::get('/stats', [StatsController::class, 'index'])->name('stats.index');
 
 // Ruta principal del dashboard del alumno
 Route::middleware(['auth', 'role:Alumno'])->group(function () {

@@ -28,6 +28,7 @@
                     <a href="{{ route('alumnos.tareas.index') }}" class="text-gray-700 dark:text-gray-200 hover:text-red-500">Tareas</a>
                     @elseif (Auth::user()->role === 'Profesor')
                     <a href="{{ url('/profesor') }}" class="text-gray-700 dark:text-gray-200 hover:text-red-500">Dashboard Profesor</a>
+                    <a href="{{ route('stats.index') }}" class="text-gray-700 dark:text-gray-200 hover:text-red-500">Estadísticas</a>
                     <a href="{{ route('tareas.index') }}" class="text-gray-700 dark:text-gray-200 hover:text-red-500">Asignar Tareas</a>
                     @endif
                     <a href="{{ route('logout') }}" class="text-gray-700 dark:text-gray-200 hover:text-red-500" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Cerrar sesión</a>
